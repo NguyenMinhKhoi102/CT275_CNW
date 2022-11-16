@@ -1,0 +1,168 @@
+body{
+  font-family: 'Quicksand', sans-serif;
+}
+main{
+    margin-top: 70px;
+    margin-bottom: 5px;
+}
+
+.card-product{
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    justify-content: center; 
+    box-sizing: border-box;
+    width: 200px;
+    min-height: 200px;
+    transition: all linear 200ms;
+    
+  }
+
+  .card-product:hover{
+    transition: all linear 200ms;
+    z-index: 1;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+    cursor: pointer;
+  }
+
+  .card-product img{
+    border-radius: 4px 4px 0px 0px;
+    
+  }
+
+  .carousel-item img{
+    height: 500px;
+  }
+
+ .fit-img{
+  max-height: 100%; 
+  max-width: 100%;
+ }
+ 
+ .brand-row div img {
+  width: 150px;
+  height: 150px;
+ }
+ .brand-row {
+  text-align: center;
+  background-image: url("../img/Glasses-Brands-List-v2.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ div.brand-row img{
+    border: 1px solid grey
+ }
+ .brand-row h3{
+  font-size: 35px;
+  color: rgb(129, 232, 255);
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px rgb(129, 232, 255);
+ }
+
+.product-card{
+  border-radius: 5px;
+    border: 1px solid #cccccc;
+    justify-content: center; 
+    box-sizing: border-box;
+    width: 300px;
+    min-height: 150px;
+    transition: all linear 200ms;
+    padding-bottom: 0px;
+}
+
+.product-card:hover{
+  transition: all linear 200ms;
+  z-index: 1;
+  box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+  cursor: pointer;
+}
+
+.product-card .card-footer{
+  background-color: #F7F1DF;
+  color: #d4a41f;
+  padding: 2px 5px;
+  margin-bottom: 0px;
+  border: 0px;
+  font-weight: bolder;
+
+}
+
+.price{
+  font-size: 30px;
+  font-weight: 600;
+  margin-right: 10px;
+  color: tomato;
+}
+
+.old-price{
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: line-through;
+}
+
+.btn-add-cart{
+  border: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin: 5px 0px;
+  width: 300px;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-buy{
+  border: 3px solid orange;
+  color: orange;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin: 5px 0px;
+  width: 300px;
+  background-color: white;
+  font-weight: bold;
+}
+
+
+
+#frmLogin{
+  width: 500px;
+  margin: auto;
+}
+
+.help-block{
+  color: red;
+}
+
+label{
+  font-weight: bold;
+}
+
+footer{
+  color: white;
+}
+
+.product-img{
+  width: 298px;
+  height: 200px;
+}
+
+.p-current-price{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.p-old-price{
+  font-weight: lighter;
+  font-size: 18px;
+  text-decoration: line-through;
+}
+
+.p-name{
+  color: dodgerblue;
+  font-weight: bolder;
+  font-size: 20px;
+  
+}

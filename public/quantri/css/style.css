@@ -1,0 +1,217 @@
+:root {
+    --bg-dark-blue: #003366;
+    --bg-dark-blue-bold: #002041c6;
+    --box-active: #cc0099;
+    --box-hover: #CC0066;
+    --text-color: aliceblue;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: var(--text-color) !important;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--bg-dark-blue) !important;
+}
+
+header {
+    height: 70px;
+    background-color: var(--bg-dark-blue);
+    display: flex;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 0px 7px 0px var(--bg-dark-blue-bold);
+}
+
+header .fa-bars {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .fa-bars:hover {
+    background-color: grey;
+}
+
+header .dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    position: relative;
+    cursor: pointer;
+}
+
+header .dropdown:hover .dropdown-list {
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+header .dropdown-value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+header .dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: var(--bg-dark-blue);
+    width: 75%;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-1em);
+    transition: all 0.25s ease-in-out;
+}
+
+header .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 100rem;
+    margin-right: 10px;
+}
+
+.arrow-up {
+    --size_triangle: 8px;
+    width: 0px;
+    height: var(--size_triangle);
+    border-left: var(--size_triangle) solid transparent;
+    border-right: var(--size_triangle) solid transparent;
+    border-bottom: var(--size_triangle) solid var(--bg-dark-blue);
+    position: absolute;
+    right: 5%;
+    bottom: 100%;
+}
+
+nav {
+    background-color: var(--bg-dark-blue);
+    color: var(--text-color);
+    /* height: 100vh; */
+}
+
+nav .dropdown,
+nav .home {
+    position: relative;
+    box-shadow: 0px 1px 0px 0px grey;
+}
+
+nav .home {
+    display: block;
+}
+
+nav .home:hover {
+    color: var(--text-color) !important;
+}
+
+nav .dropdown-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav .dropdown-item {
+    position: relative;
+    color: var(--text-color);
+    padding-block: 10px;
+    z-index: 2;
+    transition: color 0.25s linear 0.25s;
+}
+
+nav .dropdown-item:hover:before {
+    height: 100%;
+    width: 100%;
+}
+
+nav .dropdown-item:hover {
+    color: var(--text-color) !important;
+    background-color: transparent;
+}
+
+nav .dropdown-item:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: var(--box-hover);
+    width: 5px;
+    height: 0%;
+    transition: height 0.25s linear 0s, width 0.25s linear 0.35s;
+}
+
+nav .dropdown-list {
+    opacity: 0;
+    visibility: hidden;
+    background-color: var(--bg-dark-blue-bold);
+    z-index: -1;
+    max-height: 0;
+    transform: translateY(-1em);
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s, max-height 0.3s linear;
+}
+
+nav .active-item {
+    background-color: var(--box-active);
+}
+
+nav .drop {
+    opacity: 1;
+    z-index: 1;
+    visibility: visible;
+    max-height: 100%;
+    transform: translateY(0em);
+    transition-delay: 0s, 0s, 0.3s, 0s;
+}
+
+footer {
+    background-color: var(--bg-dark-blue);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+main h1 {
+    margin-block: 30px;
+    font-weight: bold;
+    color: var(--bg-dark-blue);
+}
+
+main .nav {
+    background-color: var(--bg-dark-blue);
+    padding: 10px;
+    margin-left: 0px;
+}
+
+main .nav-item {
+    padding-inline: 10px;
+}
+
+main .nav-item:hover {
+    color: var(--box-hover) !important;
+}

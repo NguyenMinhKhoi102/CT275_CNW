@@ -1,0 +1,26 @@
+<VirtualHost *:80>	
+	DocumentRoot "C:/xampp/htdocs" 
+	ServerName localhost
+	# Set access permission 
+	<Directory "C:/xampp/htdocs"> 
+		Options Indexes FollowSymLinks Includes ExecCGI
+		AllowOverride All
+		Require all granted
+	</Directory>
+</VirtualHost>
+
+<VirtualHost *:80>	
+	DocumentRoot "C:/xampp/apps/CT275_project/public" 
+	ServerName CT275_project.localhost
+	# Set access permission 
+	<Directory "C:/xampp/apps/CT275_project/public"> 
+		Options Indexes FollowSymLinks Includes ExecCGI
+		AllowOverride All
+		Require all granted
+
+		RewriteEngine On
+		RewriteCond %{REQUEST_FILENAME} !-f
+		RewriteCond %{REQUEST_FILENAME} !-d
+		RewriteRule . index.php [L]
+	</Directory>
+</VirtualHost>

@@ -1,0 +1,90 @@
+body {
+    background-color: #001830;
+    color: aliceblue;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.fa-key {
+    font-size: 50px;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#frmLogin {
+    width: 30%;
+    height: 50%;
+    padding: 20px;
+    background-color: #00101f;
+    position: relative;
+    margin-top: 7%;
+    box-shadow: 0px 0px 5px rgb(24, 43, 63);
+}
+
+.form-input {
+    border: 0;
+    border-bottom: 2px solid #eee;
+    color: aliceblue;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    transition: all 0.25s ease;
+    background-color: transparent;
+    outline: none;
+}
+
+.form-field {
+    position: relative;
+    margin-block: 30px;
+}
+
+.form-label {
+    position: absolute;
+    color: #999;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 21px;
+    pointer-events: none;
+    transition: all 0.25s ease-in-out;
+}
+
+.form-input:focus+.form-label,
+.form-input:not(:placeholder-shown)+.form-label {
+    top: -5px;
+    left: 0;
+    padding: 0 5px;
+    display: inline-block;
+    color: aliceblue;
+}
+
+.form-underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.form-underline:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    ;
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+}
+
+.form-input:focus~.form-underline:before,
+.form-input:not(:placeholder-shown)~.form-underline:before {
+    transform: scaleX(1);
+}
+
+button[type="submit"] {
+    background: linear-gradient(-120deg, #cb65c4, #4b62d0);
+    border: 0;
+    color: aliceblue;
+}

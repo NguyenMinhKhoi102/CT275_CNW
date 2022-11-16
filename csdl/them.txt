@@ -1,0 +1,2 @@
+Tạo database: ct275_project
+Import file .sql

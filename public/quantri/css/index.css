@@ -1,0 +1,29 @@
+main .info {
+    color: #003366;
+    font-size: 20px;
+    margin-block: 20px;
+    border-radius: 5px;
+    padding: 20px 60px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #003366;
+}
+
+main .avatar {
+    width: 200px;
+    height: 200px;
+    background-image: url("https://live.staticflickr.com/491/31818797506_41e52a8b36.jpg");
+    background-size: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+main .fa-mobile {
+    font-size: 35px;
+}
+
+main .info-container {
+    display: flex;
+    margin-bottom: 20px;
+}

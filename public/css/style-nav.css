@@ -1,0 +1,42 @@
+i.fav{
+    font-size: 1.5rem;
+   
+}
+
+nav{
+    box-shadow: 1px 1px 2px rgb(202, 202, 202);
+  }
+
+
+.avatar{
+    width: 30px;
+    height: 30px;
+    
+}
+
+.btn-info-user div{
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.search-input{
+    border-radius: 20px 0px 0px 20px;
+    
+}
+
+.search-append{
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgb(191, 191, 254);
+
+}
+
+nav a{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+a.nav-link{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
